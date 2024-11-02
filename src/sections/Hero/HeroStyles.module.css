@@ -11,6 +11,7 @@
         max-width: 200px;
     }
 
+
     span {
         display: flex;
         gap: 25px;
@@ -28,6 +29,11 @@
     a {
         width: fit-content;
         align-self: center;
+    }
+    p{
+        font-size: 18px;
+        margin: 0 auto;
+        max-width: 38ch;
     }
 
     button {
