@@ -20,7 +20,7 @@
 
 body {
   background-color: var(--background-color);
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   margin: 0 auto 60px;
 }
@@ -43,7 +43,7 @@ p {
 h2,
 h3,
 p {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'sans-serif', monospace;
 }
 
 h1,
@@ -57,7 +57,7 @@ h3 {
 }
 
 h1 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
   font-size: 32px;
 }
 
