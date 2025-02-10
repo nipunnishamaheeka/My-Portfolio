@@ -21,7 +21,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-[500px] h-screen flex flex-col md:flex-row-reverse justify-center md:justify-evenly items-center gap-5 px-4 relative"
+      className="min-h-[600px] flex flex-col md:flex-row-reverse justify-center md:justify-evenly items-center gap-5 px-4 relative"
     >
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-purple-50 to-white w-full -z-10"></div>

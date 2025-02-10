@@ -58,13 +58,13 @@ function Service() {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto ">
+    <div className="max-w-5xl mx-auto  ">
       {/* Section Header */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">
+        <h1 className="text-4xl md:text-6xl font-bold text-center mb-4 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">
           Services
         </h1>
-        <p className="text-gray-600">What I offer</p>
+        <p className="text-gray-600  md:text-3xl">What I offer</p>
       </div>
 
       {/* Services Grid */}

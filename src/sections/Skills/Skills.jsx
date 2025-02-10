@@ -29,32 +29,32 @@ function Skills() {
   const skillCategories = [
     {
       title: "Frontend Development",
-      skills: ["HTML", "CSS", "JavaScript", "React", "Angular", "Vue", "Tailwind CSS", "Bootstrap"]
+      skills: ["HTML", "CSS", "JavaScript", "React", "Vue", "Tailwind CSS", "Bootstrap"]
     },
     {
       title: "Mobile Development",
-      skills: ["Flutter", "React Native", "iOS", "Android", "Kotlin", "Swift", "Firebase", "REST APIs"]
+      skills: ["Flutter", "React Native", "iOS", "Android","Firebase", "REST APIs"]
     },
     {
       title: "Tools & Version Control",
-      skills: ["Git", "GitHub", "GitLab", "Webpack", "Vite", "Jest", "npm", "yarn"]
+      skills: ["Git", "GitHub", "Webpack", "Vite","jira", "npm"]
     },
     {
       title: "Design & Database",
-      skills: ["Photoshop", "Illustrator", "Premiere Pro", "MySQL", "MongoDB", "Firebase", "Figma", "XD"]
+      skills: ["Photoshop", "Illustrator", "Premiere Pro", "MySQL", "MongoDB", "Firebase", "Figma"]
     }
   ];
 
   return (
-    <section id="skills" className="py-16 px-4 relative overflow-hidden">
+    <section id="skills" className="py-16 px-4 relative  overflow-hidden">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4 
+          <h1 className="text-3xl md:text-6xl font-bold mb-4 
                        bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">
             Technical Skills
           </h1>
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-gray-600 dark:text-gray-400 md:text-2xl">
             Technologies and tools I work with
           </p>
         </div>

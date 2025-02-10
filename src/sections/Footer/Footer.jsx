@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer id="footer" className="py-8 border-t border-gray-200 dark:border-gray-800 bg-gradient-to-b from-transparent to-gray-50 dark:to-gray-400">
+    <footer id="footer" className="py-8 border-t border-gray-200 dark:border-gray-800 bg-gradient-to-b bg-opacity-5 from-transparent to-gray-50 dark:to-gray-400">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center">
           <p className="text-base text-gray-600 dark:text-gray-800 leading-relaxed">

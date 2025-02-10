@@ -1,87 +1,147 @@
-
-function Contact() {
+import React from "react";
+import "./Contact.css";
+const Contact = () => {
   return (
-    <section id="contact" className="min-h-screen py-20 bg-gradient-to-b  to-black">
+    <section id="contact" className="min-h-screen py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-16 
-                      bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">
-          Get In Touch
-        </h1>
-        <p className="text-gray-800 text-center mb-12 max-w-2xl mx-auto">
-          Have a question or want to work together? Feel free to reach out!
-        </p>
-
-        <form className="max-w-2xl mx-auto space-y-8">
-          <div className="group">
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              required
-              className="w-full  border border-gray-800 rounded-lg px-6 py-4 text-gray-100 
-                        placeholder:text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-500 
-                        focus:border-transparent transition-all duration-300
-                        backdrop-blur-sm"
-            />
-          </div>
-
-          <div className="group">
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-              className="w-full  border border-gray-800 rounded-lg px-6 py-4 text-gray-100 
-                        placeholder:text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-500 
-                        focus:border-transparent transition-all duration-300
-                        backdrop-blur-sm"
-            />
-          </div>
-
-          <div className="group">
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              required
-              rows="6"
-              className="w-full  border border-gray-800 rounded-lg px-6 py-4 text-gray-100 
-                        placeholder:text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-500 
-                        focus:border-transparent transition-all duration-300 resize-none
-                        backdrop-blur-sm"
-            ></textarea>
-          </div>
-
-          <button
-            type="submit"
-            className="w-full md:w-auto px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white 
-                     rounded-lg font-medium text-lg hover:opacity-90 transition-all duration-300
-                     hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-purple-500/25"
+        <div className="text-center mb-12">
+          <h1
+            className="text-3xl md:text-6xl font-bold mb-4 
+                       bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text"
           >
-            Send Message
-          </button>
-        </form>
+            
+            Get In Me
+          </h1>
+          <p className="text-gray-600 dark:text-gray-400 md:text-2xl">
+            Contact me for your projects
+          </p>
+        </div>
 
-        {/* Optional: Add social links */}
-        <div className="mt-16 flex justify-center space-x-6 text-gray-400">
-          <a href="#" className="hover:text-purple-500 transition-colors duration-300">
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.163 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.161 22 16.419 22 12c0-5.523-4.477-10-10-10z" />
-            </svg>
-          </a>
-          <a href="#" className="hover:text-purple-500 transition-colors duration-300">
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M22 5.16c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C17.69 3.69 16.52 3 15.23 3c-2.51 0-4.54 2.03-4.54 4.54 0 .36.04.7.11 1.03A12.83 12.83 0 011.67 3.97c-.37.64-.58 1.39-.58 2.19 0 1.57.8 2.96 2.02 3.77-.75-.02-1.45-.23-2.06-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.38.1-.78.16-1.19.16-.29 0-.58-.03-.85-.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.38 2.06 6.94 2.06 8.31 0 12.86-6.9 12.86-12.86 0-.2 0-.4-.02-.6.89-.64 1.65-1.45 2.26-2.37z" />
-            </svg>
-          </a>
-          <a href="#" className="hover:text-purple-500 transition-colors duration-300">
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path fillRule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clipRule="evenodd" />
-            </svg>
-          </a>
+        <div className="grid md:grid-cols-2 gap-12">
+          {/* Left Column - Contact Methods */}
+          <div className="space-y-6">
+            {/* Email Card */}
+            <div className="p-6 rounded-lg border border-gray-200 text-center">
+              <div className="w-12 mx-auto mb-4 flex items-center justify-center">
+                <svg
+                  className="w-8 h-8"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-sm font-semibold mb-2">Email</h3>
+              <p className="text-gray-600 text-sm mb-4">
+                ugn.nishamaheeka@gmail.com
+              </p>
+              <a
+                href="mailto:ugn.nishamaheeka@gmail.com"
+                 className="text-purple-600 hover:text-purple-800 inline-flex items-center"
+              >
+                Write me <span className="ml-2">→</span>
+              </a>
+            </div>
+
+            {/* WhatsApp Card */}
+            <div className="p-6 rounded-lg border border-gray-200 text-center">
+              <div className="w-12  mx-auto mb-4 flex items-center justify-center">
+                <svg
+                  className="w-8 h-8"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+              </div>
+              <h3 className="text-sm font-semibold mb-2">WhatsApp</h3>
+              <p className="text-gray-600 text-sm mb-4">+94 76 382 5296</p>
+              <a
+                href="https://wa.me/94763825296"
+               className="text-purple-600 hover:text-purple-800 inline-flex items-center"
+              >
+                Write me <span className="ml-2">→</span>
+              </a>
+            </div>
+
+            {/* Discord Card */}
+            <div className="p-6 rounded-sm border border-gray-200 text-center">
+              <div className="w-12  mx-auto mb-4 flex items-center justify-center">
+                <svg
+                  className="w-8 h-8"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+                </svg>
+              </div>
+              <h3 className="text-sm font-semibold mb-2">Discord</h3>
+              <p className="text-gray-600 text-sm mb-4">nipun_nishamaheeka</p>
+              <a
+                href="#"
+                 className="text-purple-600 hover:text-purple-800 inline-flex items-center"
+              >
+                Write me <span className="ml-2">→</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Right Column - Contact Form */}
+          <div>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-8 flex justify-center">Write me your project</h2>
+            <form className="space-y-6">
+              <div>
+                <label className="block text-gray-600 mb-2">Name</label>
+                <input
+                  type="text"
+                  placeholder="Insert your name"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                />
+              </div>
+
+              <div>
+                <label className="block text-gray-600 mb-2">Email</label>
+                <input
+                  type="email"
+                  placeholder="Insert your email"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                />
+              </div>
+
+              <div>
+                <label className="block text-gray-600 mb-2">Description</label>
+                <textarea
+                  rows="6"
+                  placeholder="Write your description"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 resize-none"
+                ></textarea>
+              </div>
+
+        
+              <div className="flex justify-center">
+                <button class="button ">
+                  Send Now
+                  <svg class="icon " viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Contact;
