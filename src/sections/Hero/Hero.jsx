@@ -36,13 +36,13 @@ function Hero() {
           className="max-w-[200px] md:max-w-[350px] xl:max-w-[400px] w-full 
                      animate-float  "
         />
-        <button
+        {/* <button
           onClick={toggleTheme}
           className="absolute right-0 top-0 p-2 rounded-full bg-white/90 dark:bg-gray-300/90 
                      shadow-lg hover:scale-110 transition-transform duration-200 backdrop-blur-sm"
         >
           <img src={themeIcon} alt="Color mode icon" className="w-6 h-6" />
-        </button>
+        </button> */}
       </div>
 
       {/* Content Section */}
